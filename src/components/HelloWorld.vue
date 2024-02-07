@@ -8,7 +8,7 @@
     <div v-else>
       <img src="https://gifdb.com/images/high/cute-love-bear-roses-ou7zho5oosxnpo6k.webp">
       <h2>Holi {{ $route.params.name }} ¿Quieres ser mi San Valentín?</h2>
-      <b-button class="button" :style="{ fontSize: size + 'px' }" variant="primary" @click="pressYes">Sí</b-button>
+      <b-button class="button" :style="{ fontSize: size + 'px' }" variant="success" @click="pressYes">Sí</b-button>
       <b-button class="button" variant="danger" @click="pressNo">{{ phraseSelected }}</b-button>
     </div>
   </div>
