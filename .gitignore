@@ -1,0 +1,33 @@
+# Archivos y directorios generados por el sistema operativo
+.DS_Store
+Thumbs.db
+
+# Directorio de dependencias npm
+node_modules/
+
+# Archivo de configuración local
+.env.local
+
+# Carpeta de compilación/dist
+dist/
+
+# Carpeta de archivos de construcción
+build/
+
+# Carpeta temporal
+.temp/
+
+# Carpeta de archivos de respaldo
+.history/
+
+# Archivo de registro
+npm-debug.log*
+
+# Archivos de configuración de Visual Studio Code
+.vscode/
+
+# Carpeta de configuración de usuario
+.idea/
+
+# Carpeta de archivos temporales
+temp-*
