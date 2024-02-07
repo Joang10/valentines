@@ -2,12 +2,13 @@
   <div class="main">
     <div v-if="success">
       <h2>Jeje ❤️ Te quiero {{ $route.params.name }}</h2>
-      <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif">
+      <img class="image" src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif">
       <h2>😎 ¡Nos vemos el 14! 😎</h2>
     </div>
     <div v-else>
-      <img src="https://gifdb.com/images/high/cute-love-bear-roses-ou7zho5oosxnpo6k.webp">
-      <h2>Holi {{ $route.params.name }} ¿Quieres ser mi San Valentín?</h2>
+      <img class="image" src="https://gifdb.com/images/high/cute-love-bear-roses-ou7zho5oosxnpo6k.webp">
+      <h3>Holi {{ $route.params.name }}</h3>
+      <h4>¿Quieres ser mi San Valentín?</h4>
       <b-button class="button" :style="{ fontSize: size + 'px' }" variant="success" @click="pressYes">Sí</b-button>
       <b-button class="button" variant="danger" @click="pressNo">{{ phraseSelected }}</b-button>
     </div>
@@ -60,5 +61,9 @@ export default {
   margin: 20px;
   min-width: 120px;
   min-height: 50px;
+}
+
+.image {
+  max-width: 400px;
 }
 </style>
